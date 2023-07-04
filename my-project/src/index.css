@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:1vw;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.table th{
+	background-color: #443C68;
+	color:#ffffff;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.search-container {
+  margin-top: 80px;
+  margin-left: 50%; 
+  border-radius: 2rem;
+  text-align: center;
+	width: 50%;
+  position: relative;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input {
+	width: 40%;
+	padding: 10px;
+	font-size: 1.6rem;
+	outline: none;
+  border-radius: 2rem;
+	border: 2.5px solid #443C68;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.heading{
+  cursor: pointer;
+}
+.result {
+  display: inline-block;
+  padding: 5px 7px;
+  cursor: pointer;
+  /* text-align: center; */
+  color: #000;
+  margin-top: 1.5vw;
+  margin-left: 45%; 
+  border-radius: 2rem;
+  box-shadow: 0 6px #000;
+	border: 2.5px solid #443C68;
+
+}
+
+.result:hover {background-color: #fff;}
+
+.result:active {
+  background-color: #fff;
+  box-shadow: 0 3px #000;
+  transform: translateY(4px);
+}
+#btn{
+  font-size: 1vw;
+  background-color: #fff;
+  border: 0px;
+  padding: 0%;
+}
+.getVal
+{
+  margin-top: 0.85vw;
+  margin-left: 45%;
+  color: #443C68;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  font-size: 0.6vw;
+}
+@media screen and (max-width : 600px) {
+ .search-container input{
+     font-size: 0.9rem;
+ } 
+}
+@media screen and (max-width : 800px) and (min-width : 601px){
+  .search-container input{
+      font-size: 1.1rem;
+  } 
+ }
+ @media screen and (max-width : 1200px) and (min-width : 801px) {
+  .search-container input{
+      font-size: 1.3rem;
+  } 
+ }
+
+ @media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+    font-size: 8px;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 40%;
+		padding-left:15px;
+		text-align: left;
+	}
+  
+}
